@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>RLU Registration Form</title>
+        <meta http-equiv="refresh" content="">
+        <link rel="stylesheet" href="./styles.css">
+        </head>
+    <body>
+        <header class="header">
+            <h1 id="title">Richmond Latino United Registration Form</h1>
+            <img id="Logo" src="../Rlu-Experimental/images/RLUimgno3br.jpg" alt="club logo">
+            <p id="description">Please Fill Out All Required Information</p>
+        </header>
+        <!--Below is the actual Form-->
+        <!--Add action="where ever form should go" to receive them-->
+        <form id="survey form" method="post" >
+            <!--Ask about what the form is going to be about delete when completed-->
+            <fieldset class="Parent1info">
+                <h2 id="parentinfotitle">Parent 1 Information</h2>
+                <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required placeholder="Required*"> </label>
+                <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required placeholder="Required*"> </label>
+                <label for="parent1-email">Email Address: <input id="parent1-email" name=="parent1-email" type="email" required placeholder="Required*"></label>
+                <label for="parent1-phone">Phone Number: <input id="parent1-phone" name="parent1-phone" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="14" minlength="10" placeholder="Only Numbers*" required></label>
+            </fieldset>
+            <fieldset class="parent2info">
+                <h2 id="parent2infotitle">Parent 2 Information</h2>
+                <label for="p2first-name">First Name: <input id="p2first-name" type="text" name="p2first-name"> </label>
+                <label for="p2last-name">Last Name: <input id="p2last-name" name="p2last-name" type="text"></label>
+                <label for="parent2-email">Email Address: <input id="parent2-email" name="parent2-email" type="email"> </label>
+                <label></label>
+                <label for="parent2-phone">Phone Number: <input id="parent2-phone" name="parent2-phone" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="14" minlength="10" placeholder="Only Numbers" ></label>
+            </fieldset>
+            <fieldset class="playerinfo">
+                <h2 id="playertitle">Player Information</h2>
+                <label for="playerfirst-name">First Name: <input id="playerfirst-name" name="playerfirst-name" type="text" required placeholder="Required*"></label>
+                <label for="playerlast-name">Last Name: <input id="playerlast-name" name="playerlast-name" type="text" required placeholder="Required*"></label>
+                <label for="playerphone">Phone Number: <input id="playerphone" name="playerphone" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Only If Available " ></label>
+                <label for="playerdob">Date of Birth: <input id="playerdob" name="playerdob" type="date" required></label>
+                <label for="playerposition">Preferred Position: 
+                    <select id="playerposition" name="playerposition" required>
+                        <option value="">(select one)</option>
+                        <option value="1">Striker</option>
+                        <option value="2">Midfield</option>
+                        <option value="3">Winger</option>
+                        <option value="4">Defense</option>
+                        <option value="5">GoalKeeper</option>
+                        <option value="6" type="text">Other</option>      
+                    </select>
+                </label>
+                <!--THIS AGE IS ONYL FOR FREECODE CAMP REMOVE BEFORE FINALIZING-->
+                <label>Age: <input placeholder="*" type="number" max="100" min="0" max-length="3" required></label>
+            </fieldset>
+            <input type="Submit" value="Submit">
+        </form>
+    </body>
+</html>
