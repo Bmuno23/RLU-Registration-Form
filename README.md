@@ -1,2 +1,2 @@
 # RLU-Registration-Form
-Prototype of RLU registration form
+Prototype of RLU Registration Form
