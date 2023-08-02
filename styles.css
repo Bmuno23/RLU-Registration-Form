@@ -1,25 +1,27 @@
+body{
+    min-width: 1500px;
+    font-family: tahoma;
+    margin: auto;
+    margin-top: -22px;
+}
 .header{
     background-color:  #EBE7DB;
     text-align: center;
-    color: white;
+    color: #202040;
     width: 100%;
-    border-radius: 20px;
+    padding-bottom: 15px;
 }
 img{
     display: block;
     max-width: 100%;
     height: auto;
-    width: 175px;
+    width: 120px;
     margin-left: auto;
     margin-right: auto;
 }
-body{
-    min-width: 1500px;
-    font-family: tahoma;
-    margin: auto;
-}
 form{
     width: auto;
+    margin-top: -5px;
 }
 #parentinfotitle,
 #parent2infotitle{
@@ -34,7 +36,8 @@ fieldset{
     text-align: center;
     border: none;
     border-bottom: 3px solid #3b3b4f;
-    border-radius: 10px;
+    border-radius: 5px;
+    padding-bottom: 20px;
 }
 input,
 select{
@@ -59,3 +62,34 @@ input[type="Submit"]{
 input[type="Submit"]:hover{
     background-color: rgb(117, 17, 17);
 }
+label{
+    font-size: 15px;
+}
+fieldset:first-of-type{
+    border-bottom: none;
+}
+.file1,
+.file2,
+.file3{
+    background-color: #0a0a23;
+    border: #EBE7DB;
+    color: white;
+    text-align: center;
+    margin-right: 20px;
+}
+.completerequiredfiles{
+    border-bottom: none;
+}
+.fileupload{
+    padding-top: 20px;
+}
+.otherinformation{
+    max-width: 100%;
+}
+
+    
+
+
+
+
+

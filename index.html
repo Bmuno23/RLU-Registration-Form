@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <title>RLU Registration Form</title>
         <!--ADD WHEN EDITING FORM <meta http-equiv="refresh" content="time for refresh goes here"--> 
+        <meta http-equiv="refresh" content="">
         <link rel="stylesheet" href="./styles.css">
+        <link rel="icon" href="./images/RLUimg.jpg" type="image/x-icon">
         </head>
     <body>
         <header class="header">
@@ -17,22 +19,24 @@
         <form id="survey form" method="post" >
             <!--Ask about what the form is going to be about delete when completed-->
             <fieldset class="Parent1info">
-                <h2 id="parentinfotitle">Parent 1 Information</h2>
+                <h3 id="parentinfotitle">Parent 1 Information</h3>
                 <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required placeholder="Required*"> </label>
                 <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required placeholder="Required*"> </label>
                 <label for="parent1-email">Email Address: <input id="parent1-email" name=="parent1-email" type="email" required placeholder="Required*"></label>
                 <label for="parent1-phone">Phone Number: <input id="parent1-phone" name="parent1-phone" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="14" minlength="10" placeholder="Only Numbers*" required></label>
             </fieldset>
+            <fieldset id="birthcertificatefile">
+                <label for="birthcertificate">If Possible Please Upload Copy of Child Birth Certificate: <input id="birthcertificate" type="file" ></label>
+            </fieldset>
             <fieldset class="parent2info">
-                <h2 id="parent2infotitle">Parent 2 Information</h2>
+                <h3 id="parent2infotitle">Parent 2 Information</h3>
                 <label for="p2first-name">First Name: <input id="p2first-name" type="text" name="p2first-name"> </label>
                 <label for="p2last-name">Last Name: <input id="p2last-name" name="p2last-name" type="text"></label>
                 <label for="parent2-email">Email Address: <input id="parent2-email" name="parent2-email" type="email"> </label>
-                <label></label>
                 <label for="parent2-phone">Phone Number: <input id="parent2-phone" name="parent2-phone" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="14" minlength="10" placeholder="Only Numbers" ></label>
             </fieldset>
             <fieldset class="playerinfo">
-                <h2 id="playertitle">Player Information</h2>
+                <h3 id="playertitle">Player Information</h3>
                 <label for="playerfirst-name">First Name: <input id="playerfirst-name" name="playerfirst-name" type="text" required placeholder="Required*"></label>
                 <label for="playerlast-name">Last Name: <input id="playerlast-name" name="playerlast-name" type="text" required placeholder="Required*"></label>
                 <label for="playerphone">Phone Number: <input id="playerphone" name="playerphone" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Only If Available " ></label>
@@ -50,6 +54,20 @@
                 </label>
                 <!--THIS AGE IS ONYL FOR FREECODE CAMP REMOVE BEFORE FINALIZING-->
                 <label>Age: <input placeholder="*" type="number" max="100" min="0" max-length="3" required></label>
+            </fieldset>
+            <fieldset class="completerequiredfiles" type>
+                <h3 id="completefiles">Please Download, Complete, And Upload Required Forms</h3>
+                <label id="usclubsoccerspanish"><a class="file1" href="https://www.richmondlatinounited.com/_files/ugd/6fbfc3_df1d23fc104e49789d0a89b6a1eb1129.docx?dn=USBLUBFORM%20SPANISH.docx" target="_blank">US Club Soccer Form (Spanish)</a></label>
+                <label id="usclubsoccerenglish"><a class="file2" target="_blank" href="https://www.richmondlatinounited.com/_files/ugd/6fbfc3_ecb2741868f04613badf49755ff0aed6.pdf">US Club Soccer Form(English)</a></label>
+                <label id="vysaform"><a class="file3" type="_blank" href="https://www.richmondlatinounited.com/_files/ugd/6fbfc3_2ceebecf6524463e94292cb95b68126c.pdf">VYSA Medical Release Form</a></label>
+            </fieldset>
+            <fieldset class="fileupload">
+                <label>US Club Soccer Form: <input type="file"></label>
+                <label>VYSA Medical Release Form: <input type="file"></label>
+            </fieldset>
+            <fieldset>
+                <h3>Please Indicate If You Will Complete Forms In Person</h3>
+                <label for="inperson"><input type="checkbox" name="complete-forms"> I Will Complete Forms In Person</label>
             </fieldset>
             <input type="Submit" value="Submit">
         </form>
